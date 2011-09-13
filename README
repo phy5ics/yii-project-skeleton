@@ -9,7 +9,7 @@ The additions to the framework include the following:
 - Updated to jQuery 1.6.2
 - Includes a custom port of the Facebook PHP SDK 3.0 (todo: update to latest verion of SDK)
 - Provides valid P3P headers for SSL connections for older versions of IE to get around security restrictions for third-party cookies
-- Channel controller to elimintate Facebook JS bugs
+- Channel controller to eliminate Facebook JS bugs
 - Amazon S3 support
 - cURL library extension
 - Added isMobile() function to base controller for generic test for mobile devices
