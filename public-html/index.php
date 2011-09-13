@@ -3,8 +3,8 @@
 header('P3P:CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"');
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/../yii/framework/yii.php';
-$config=dirname(__FILE__).'/../protected/config/main.php';
+$yii = dirname(__FILE__).'/../yii/framework/yii.php';
+$config = dirname(__FILE__).'/../protected/config/main.php';
 
 // remove the following lines when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);
