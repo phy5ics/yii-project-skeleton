@@ -1,0 +1,9 @@
+This is a fork of Yii 1.1.8 with a project created in public-html.  The additions to the framework include the following out-of-the-box: 
+- Configured to use SASS
+- Updated to jQuery 1.6.2
+- Includes a custom port of the Facebook PHP SDK 3.0 (todo: update to latest verion of SDK)
+- Provides valid P3P headers for SSL connections for older versions of IE to get around security restrictions for third-party cookies
+- Channel controller to elimintate Facebook JS bugs
+- Amazon S3 support
+- Firebug built-in to base controller for YII_DEBUG modes
+- cURL library
