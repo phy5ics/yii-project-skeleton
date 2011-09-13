@@ -59,6 +59,17 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
+		/*'mongodb' => array(
+			'class'             => 'EMongoDB',
+	    'connectionString'  => 'mongodb://localhost',
+	    'dbName'            => 'levis-niot',
+	    'fsyncFlag'         => false,
+	    'safeFlag'          => false,
+		'useCursor'         => false,
+		),
+		'session' => array(
+			'class' => 'ext.YiiMongoDbSuite.EMongoHttpSession',
+		),*/
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
