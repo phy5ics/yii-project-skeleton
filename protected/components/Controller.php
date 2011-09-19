@@ -26,7 +26,7 @@ class Controller extends CController
 	 * @var * any variable or object
 	 */
 	protected function fire($var) {
-		echo Yii::trace(CVarDumper::dumpAsString($var),'vardump');x
+		echo Yii::trace(CVarDumper::dumpAsString($var),'vardump');
 	}
 	
 	private $_isMobile;
@@ -40,3 +40,5 @@ class Controller extends CController
 	    return $this->_isMobile;
 	}
 }
+
+?>

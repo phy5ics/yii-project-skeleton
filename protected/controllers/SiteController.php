@@ -29,6 +29,13 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+		
+		//$user = new EOAuth2UserIdentity();
+		
+		//echo $uid->getProvider();
+		
+		//var_dump(Yii::app()->user->isGuest);
+		
 		$this->render('index');
 	}
 
@@ -101,3 +108,5 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 }
+
+?>

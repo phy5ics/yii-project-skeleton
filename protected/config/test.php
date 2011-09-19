@@ -15,3 +15,5 @@ return CMap::mergeArray(
 		),
 	)
 );
+
+?>

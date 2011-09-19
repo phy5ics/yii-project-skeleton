@@ -21,6 +21,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'application.extensions.*',
+		//'application.modules.user.*',
 	),
 
 	'modules'=>array(
@@ -31,13 +32,14 @@ return array(
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+		'user',
 	),
 
 	// application components
 	'components'=>array(
-		'user'=>array(
-			// enable cookie-based authentication
+		'user' => array(
 			'allowAutoLogin'=>true,
+			'loginUrl' => '/user/login',
 		),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
@@ -49,7 +51,7 @@ return array(
 			),
 		),
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=fcuk-fragrance;unix_socket=/opt/local/var/run/mysql5/mysqld.sock',
+			'connectionString' => 'mysql:host=localhost;dbname=skeleton;unix_socket=/opt/local/var/run/mysql5/mysqld.sock',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
@@ -59,16 +61,18 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-		/*'mongodb' => array(
+		'mongodb' => array(
 			'class'             => 'EMongoDB',
-	    'connectionString'  => 'mongodb://localhost',
-	    'dbName'            => 'levis-niot',
+	    'connectionString'  => 'mongodb://localhost:27017,mongodb://localhost:27018,mongodb://localhost:27019,',
+	    'dbName'            => 'skeleton',
 	    'fsyncFlag'         => false,
 	    'safeFlag'          => false,
 		'useCursor'         => false,
 		),
+		/*
 		'session' => array(
 			'class' => 'ext.YiiMongoDbSuite.EMongoHttpSession',
+			'collectionName' => 'sessions',
 		),*/
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -125,3 +129,5 @@ return array(
 		),
 	),
 );
+
+?>

@@ -40,3 +40,5 @@ class ContactForm extends CFormModel
 		);
 	}
 }
+
+?>
